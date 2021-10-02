@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
 
+.layout-enter-active, .layout-leave-active {
+  transition: opacity 300ms ease-in-out;
+}
+.layout-enter, .layout-leave-active {
+  opacity: 0
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

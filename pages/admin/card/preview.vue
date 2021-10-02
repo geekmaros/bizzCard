@@ -46,7 +46,7 @@
     <main class='grid grid-cols-12 gap-7 pt-10'>
       <div class='sub-main col-span-7'>
 
-          <div v-if='preview' class='form-group'>
+          <div :class="preview ? 'pb-10 border-b border-gray-200' : ''" v-if='preview' class='form-group'>
             <p class='text-base  font-medium text-bizz-black-400'>
               <span class='block leading-5'>Full Card Template</span>
               <span class='text-xs mt-0.5 block text-gray-400'>Drag or choose your file to upload</span>
@@ -58,7 +58,7 @@
           </div>
 
 
-        <div v-if='!preview' class='form-group'>
+        <div :class="!preview ? 'pb-10 border-b border-gray-200' : ''" v-if='!preview' class='form-group'>
           <img src='/svg/preview.svg' alt=''>
           <p class='text-28px  font-bold text-bizz-black-400'>
             <span class='block text-sidebar leading-5'>Card Template Created</span>
@@ -102,6 +102,7 @@
 export default {
   name: 'CardPreview',
   layout:'dashboard',
+  transition: 'layout',
   data(){
     return{
       toggleValue: false,

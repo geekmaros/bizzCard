@@ -46,7 +46,7 @@
     <main class='grid grid-cols-12 gap-7 pt-10'>
       <div class='sub-main col-span-7'>
         <form action='#'>
-          <div class='form-group'>
+          <div :class="activeCard === 'back' ? 'pb-10 border-b border-gray-200' : ''" class='form-group'>
             <label class='text-base  font-medium text-bizz-black-400' for=''>
               <span class='block leading-5'>Upload Background Image</span>
               <span class='text-xs mt-0.5 block text-gray-400'>Drag or choose your file to upload</span>
@@ -183,7 +183,7 @@
           </div>
 
           <div class='submit-wrapper flex justify-between mt-10'>
-            <p role='button' class='flex items-center space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
+            <p @click="() => $router.push('/admin/card/preview')" role='button' class='flex items-center space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
               <span>Create Template</span>
               <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69175 1.09943C6.95215 0.859063 7.35811 0.875298 7.59848 1.1357L9.67156 3.38151C9.89845 3.6273 9.89846 4.00617 9.67157 4.25197L7.59849 6.49783C7.35812 6.75823 6.95216 6.77447 6.69176 6.5341C6.43136 6.29373 6.41512 5.88777 6.65548 5.62737L7.73452 4.45841L1.50006 4.45841C1.14568 4.45841 0.858398 4.17112 0.858398 3.81674C0.858398 3.46236 1.14568 3.17507 1.50006 3.17507L7.7345 3.17507L6.65549 2.00616C6.41512 1.74576 6.43135 1.33981 6.69175 1.09943Z" fill="#FCFCFD"/>
@@ -236,6 +236,7 @@
 export default {
   name: 'CreateCard',
   layout:'dashboard',
+  transition: 'layout',
   data(){
     return{
       toggleValue: false,

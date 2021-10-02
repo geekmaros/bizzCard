@@ -203,7 +203,8 @@
 <script>
 export default {
   name: 'AdminIndex',
-  layout:'dashboard'
+  layout:'dashboard',
+  transition: 'layout'
 }
 </script>
 

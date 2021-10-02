@@ -18,7 +18,7 @@
   </div>
   <div class='nav bg-sidebar h-full '>
     <ul class='pt-14 pl-4.2 pr-8'>
-      <li class='pl-3 rounded-lg mb-4 hover:bg-bizz-orange pt-2 pb-2 text-white font-medium'><nuxt-link to='/admin' class='space-x-6 flex items-center'>
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2 text-white font-medium'><nuxt-link to='/admin' class='space-x-3 flex items-center'>
         <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.50054 20.3508L13.4257 15.2492L17.9031 18.7663L21.7442 13.8088" stroke="white" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="26.2213" cy="6.47486" r="2.52076" stroke="white" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +29,7 @@
       </nuxt-link>
       </li>
 
-      <li class='pl-3 rounded-lg mb-4 hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='/admin/card' class='space-x-6 flex items-center'>
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='/admin/card/create' class='space-x-3 flex items-center'>
         <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9306 29.2568H11.9833C7.96209 29.2568 4.87716 27.8044 5.75343 21.9586L6.77373 14.0362C7.3139 11.1193 9.17446 10.003 10.807 10.003H24.155C25.8115 10.003 27.564 11.2034 28.1882 14.0362L29.2085 21.9586C29.9527 27.1442 26.9518 29.2568 22.9306 29.2568Z" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M23.1101 9.71496C23.1101 6.58587 20.5735 4.04925 17.4444 4.04925V4.04925C15.9376 4.04286 14.4903 4.63696 13.4226 5.70018C12.3549 6.7634 11.7547 8.20815 11.7547 9.71496H11.7547" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,14 +40,46 @@
       </nuxt-link>
       </li>
 
-      <li class='pl-3 rounded-lg mb-4 hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='/admin/card' class='space-x-6 flex items-center'>
-        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9306 29.2568H11.9833C7.96209 29.2568 4.87716 27.8044 5.75343 21.9586L6.77373 14.0362C7.3139 11.1193 9.17446 10.003 10.807 10.003H24.155C25.8115 10.003 27.564 11.2034 28.1882 14.0362L29.2085 21.9586C29.9527 27.1442 26.9518 29.2568 22.9306 29.2568Z" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M23.1101 9.71496C23.1101 6.58587 20.5735 4.04925 17.4444 4.04925V4.04925C15.9376 4.04286 14.4903 4.63696 13.4226 5.70018C12.3549 6.7634 11.7547 8.20815 11.7547 9.71496H11.7547" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M21.3341 15.6208H21.2741" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M13.6873 15.6208H13.6273" stroke="#828282" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='#' class='space-x-3 flex items-center'>
+        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" d="M9.77303 14.2216V23.218" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" d="M15.8921 9.91602V23.2171" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" d="M21.9124 18.9754V23.2178" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M21.9878 3.46564H9.69814C5.41424 3.46564 2.729 6.49769 2.729 10.79V22.3692C2.729 26.6615 5.40175 29.6936 9.69814 29.6936H21.9878C26.2842 29.6936 28.9569 26.6615 28.9569 22.3692V10.79C28.9569 6.49769 26.2842 3.46564 21.9878 3.46564Z" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <span>Card Templates</span>
+
+        <span>Analytics</span>
+      </nuxt-link>
+      </li>
+
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='#' class='space-x-3 flex items-center'>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M10.9523 19.8896L13.0409 13.2156L19.7149 11.127L17.6263 17.801L10.9523 19.8896Z" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle opacity="0.4" cx="15.3334" cy="15.5072" r="12.6038" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <span>User Management</span>
+      </nuxt-link>
+      </li>
+
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='#' class='space-x-3 flex items-center'>
+        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" d="M28.4828 19.5992H23.1738C21.2245 19.598 19.6445 18.0192 19.6433 16.0699C19.6433 14.1206 21.2245 12.5418 23.1738 12.5406H28.4828" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" d="M23.775 15.9889H23.3662" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M10.2658 4.65433H21.6008C25.4014 4.65433 28.4825 7.73547 28.4825 11.5361V20.948C28.4825 24.7487 25.4014 27.8298 21.6008 27.8298H10.2658C6.46517 27.8298 3.38403 24.7487 3.38403 20.948V11.5361C3.38403 7.73547 6.46517 4.65433 10.2658 4.65433Z" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <path opacity="0.4" d="M9.33142 10.605H16.4116" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Wallet</span>
+      </nuxt-link>
+      </li>
+
+
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='#' class='space-x-3 flex items-center'>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M27.3919 10.1553L26.5757 8.73886C25.8851 7.54035 24.3548 7.12689 23.1546 7.81458V7.81458C22.5833 8.15112 21.9017 8.2466 21.2599 8.07997C20.6181 7.91334 20.069 7.49827 19.7336 6.92631C19.5178 6.56277 19.4019 6.14869 19.3975 5.72595V5.72595C19.417 5.0482 19.1613 4.39143 18.6887 3.90525C18.216 3.41907 17.5668 3.14489 16.8887 3.14517H15.2442C14.58 3.14516 13.9431 3.40986 13.4745 3.88069C13.0059 4.35153 12.7443 4.98967 12.7475 5.65393V5.65393C12.7278 7.02539 11.6103 8.12682 10.2387 8.12668C9.816 8.12229 9.40192 8.00634 9.03837 7.79058V7.79058C7.83822 7.10288 6.30788 7.51634 5.61734 8.71485L4.74107 10.1553C4.05136 11.3523 4.45919 12.8817 5.65335 13.5763V13.5763C6.42957 14.0245 6.90774 14.8527 6.90774 15.749C6.90774 16.6453 6.42957 17.4735 5.65335 17.9216V17.9216C4.46071 18.6116 4.05243 20.1373 4.74107 21.3307V21.3307L5.56932 22.7591C5.89287 23.3429 6.43573 23.7737 7.07778 23.9562C7.71982 24.1387 8.40812 24.0578 8.99035 23.7314V23.7314C9.56272 23.3974 10.2448 23.3059 10.885 23.4772C11.5251 23.6485 12.0703 24.0685 12.3994 24.6437C12.6152 25.0072 12.7311 25.4213 12.7355 25.844V25.844C12.7355 27.2296 13.8587 28.3528 15.2442 28.3528H16.8887C18.2696 28.3528 19.3909 27.2369 19.3975 25.856V25.856C19.3943 25.1897 19.6576 24.5497 20.1288 24.0785C20.5999 23.6073 21.2399 23.3441 21.9063 23.3473C22.328 23.3586 22.7404 23.474 23.1066 23.6834V23.6834C24.3036 24.3731 25.833 23.9653 26.5277 22.7711V22.7711L27.3919 21.3307C27.7264 20.7565 27.8183 20.0726 27.647 19.4305C27.4758 18.7884 27.0557 18.241 26.4796 17.9096V17.9096C25.9036 17.5782 25.4835 17.0309 25.3122 16.3888C25.141 15.7467 25.2328 15.0628 25.5674 14.4886C25.7849 14.1088 26.0998 13.7939 26.4796 13.5763V13.5763C27.6666 12.882 28.0735 11.3616 27.3919 10.1673V10.1673V10.1553Z" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle opacity="0.4" cx="16.0731" cy="15.7482" r="3.45704" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Settings</span>
       </nuxt-link>
       </li>
     </ul>
