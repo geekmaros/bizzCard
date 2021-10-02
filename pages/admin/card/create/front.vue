@@ -15,7 +15,7 @@
 
     <nav class='flex mt-12 w-full justify-between items-center pb-5 border-b border-gray-100'>
       <div class='left flex items-center space-x-3'>
-        <div class='bc-front font-bold cursor-pointer text-bizz-orange py-1.5 px-2 rounded-full border border-bizz-orange flex items-center space-x-3 text-sm leading-4'>
+        <div @click="activeCard = 'front'" :class="activeCard === 'front' ? 'text-bizz-orange border-bizz-orange border font-bold' : ''" class='bc-front font-medium  cursor-pointer  py-1.5 px-2 rounded-full   flex items-center space-x-3 text-sm leading-4'>
           <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.394 0.843492C6.66455 0.593754 7.08632 0.610623 7.33606 0.881169L9.48991 3.21448C9.72564 3.46985 9.72564 3.86347 9.48991 4.11885L7.33606 6.45221C7.08633 6.72276 6.66456 6.73963 6.39401 6.4899C6.12346 6.24016 6.10659 5.81839 6.35632 5.54784L7.47739 4.33333L1.00004 4.33333C0.63185 4.33333 0.333374 4.03486 0.333373 3.66667C0.333373 3.29848 0.63185 3 1.00004 3L7.47737 3L6.35633 1.78555C6.10659 1.515 6.12346 1.09323 6.394 0.843492Z" fill="currentColor"/>
           </svg>
@@ -24,7 +24,7 @@
 
         </div>
 
-        <div class='bc-front font-medium cursor-pointer text-gray-500 py-1.5 px-2 flex items-center space-x-3 text-sm leading-4'>
+        <div @click='activeCard = "back"' :class="activeCard === 'back' ? 'text-bizz-orange border-bizz-orange border font-bold' : ''" class='bc-back font-medium cursor-pointer rounded-full text-gray-500 py-1.5 px-2 flex items-center space-x-3 text-sm leading-4'>
           <span>Card Back Side </span>
         </div>
       </div>
@@ -55,7 +55,7 @@
             <img class='mt-3 cursor-pointer' src='/upload%20field.svg' alt='' @click='() => $refs.upload.click()'>
           </div>
 
-          <div class='company mt-8'>
+          <div v-if='activeCard === "front"' class='company mt-8'>
             <p class='text-base mb-6  font-medium leading-5 text-bizz-black-400' for=''>
               <span class='block leading-5'>Company Details</span>
             </p>
@@ -242,7 +242,8 @@ export default {
       togglePhotoValue: false,
       companyName: '',
       role:'',
-      fullname: ''
+      fullname: '',
+      activeCard: 'front'
     }
   }
 }

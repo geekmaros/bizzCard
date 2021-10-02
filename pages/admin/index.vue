@@ -114,7 +114,7 @@
         </p>
       </div>
 
-      <div class='table-wrapper'>
+      <div class='table-wrapper mt-5'>
         <table class='w-full'>
           <thead>
           <tr class='font-bold text-xs text-gray-400 leading-5'>
