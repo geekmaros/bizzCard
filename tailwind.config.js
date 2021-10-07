@@ -45,6 +45,8 @@ module.exports = {
         "bizz-black-300": "#1C2A3A",
         "bizz-black-400": "#23262F",
         "bizz-green": "#4B9F47",
+        "bizz-blue": "#2772F0",
+        "bizz-dark-blue": "#091231",
 
       },
       lineHeight: {
