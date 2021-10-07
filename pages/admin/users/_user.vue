@@ -158,7 +158,13 @@
       <div class='col-span-3 bg-white rounded-2xl self-start pb-10 shadow-lg'>
         <div class='profile-info '>
           <div class='header items-center border-b pb-8 pt-8 '>
-            <h2 class='text-black font-bold pl-5'>Public Profile</h2>
+         <div class='pp-header flex justify-between items-center pr-5'>
+           <h2 class='text-black font-bold pl-5'>Public Profile</h2>
+
+           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3678 12.3868C6.3438 12.3868 7.13501 11.5957 7.13501 10.6196C7.13501 9.6436 6.3438 8.85242 5.3678 8.85242C4.3918 8.85242 3.60059 9.6436 3.60059 10.6196C3.60059 11.5957 4.3918 12.3868 5.3678 12.3868ZM12.4359 10.6197C12.4359 11.5957 11.6447 12.3869 10.6687 12.3869C9.69266 12.3869 8.90148 11.5957 8.90148 10.6197C8.90148 9.64363 9.69266 8.85244 10.6687 8.85244C11.6447 8.85244 12.4359 9.64363 12.4359 10.6197ZM15.9708 12.3869C16.9468 12.3869 17.738 11.5957 17.738 10.6197C17.738 9.64363 16.9468 8.85244 15.9708 8.85244C14.9947 8.85244 14.2035 9.64363 14.2035 10.6197C14.2035 11.5957 14.9947 12.3869 15.9708 12.3869Z" fill="#2772F0"/>
+           </svg>
+         </div>
             <div class='left flex flex-col items-center mt-10 space-x-3'>
               <img class='user-avatar rounded-full' src='/user-avatar.png' alt=''>
               <div class='mt-3'>
