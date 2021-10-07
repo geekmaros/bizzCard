@@ -52,7 +52,8 @@
       </nuxt-link>
       </li>
 
-      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'><nuxt-link to='#' class='space-x-3 flex items-center'>
+      <li class='pl-3 rounded-lg mb-4 text-sm hover:bg-bizz-orange pt-2 pb-2  text-white font-medium'>
+        <nuxt-link to='/admin/users' class='space-x-3 flex items-center'>
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M10.9523 19.8896L13.0409 13.2156L19.7149 11.127L17.6263 17.801L10.9523 19.8896Z" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
           <circle opacity="0.4" cx="15.3334" cy="15.5072" r="12.6038" stroke="#E0E0E0" stroke-width="1.96709" stroke-linecap="round" stroke-linejoin="round"/>
