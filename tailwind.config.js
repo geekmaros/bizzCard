@@ -40,14 +40,18 @@ module.exports = {
       colors: {
         sidebar: "#050917",
         "bizz-orange": "#FF9A51",
+        "bizz-orange-400": "#FFC093",
         "bizz-orange-100": "#fbf5f3",
         "bizz-black-100": "#040415",
         "bizz-black-200": "#1D263A",
         "bizz-black-300": "#1C2A3A",
         "bizz-black-400": "#23262F",
         "bizz-green": "#4B9F47",
+        "bizz-green-deep": "#089E68",
         "bizz-blue": "#2772F0",
         "bizz-dark-blue": "#091231",
+        "bizz-blue-500": "#2F80ED",
+
 
       },
       lineHeight: {
@@ -105,6 +109,7 @@ module.exports = {
       },
       borderRadius: {
         "30px": "30px",
+        "10px": "10px",
       },
     },
   },
