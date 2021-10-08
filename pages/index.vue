@@ -6,7 +6,7 @@
 export default {
 
   mounted() {
-      this.$router.push('/admin');
+      this.$router.push('/admin/overview');
   },
 
 }

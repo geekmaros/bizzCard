@@ -51,6 +51,8 @@ module.exports = {
         "bizz-blue": "#2772F0",
         "bizz-dark-blue": "#091231",
         "bizz-blue-500": "#2F80ED",
+        "bizz-icon-gray": "#828282",
+
 
 
       },

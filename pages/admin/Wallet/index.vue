@@ -74,7 +74,7 @@
             </div>
 
             <!-- 3rd Box -->
-            <div class="self-start bg-green-600 py-3 text-center rounded-md">
+            <div class="self-start cursor-pointer bg-green-600 py-3 text-center rounded-md">
               <p class="text-white text-xl font-semibold">Fund Wallet</p>
             </div>
           </div>
@@ -133,7 +133,7 @@
                   <input class="-ml-2" type="checkbox" />
                 </th>
                 <th>Transaction ID</th>
-                <th class='text-left'>Time</th>
+                <th class='text-center'>Time</th>
                 <th>Amount</th>
                 <th>Payment Type</th>
                 <th>Subscription Type</th>
@@ -168,7 +168,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="text-xs leading-5 text-bizz-black-100 font-medium">
+                <td class="text-xs leading-5 text-center text-bizz-black-100 font-medium">
                   17 May 2021 10:10pm
                 </td>
                 <td

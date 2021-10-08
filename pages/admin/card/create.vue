@@ -85,8 +85,24 @@
               <label class='text-xs  block leading-5 uppercase font-bold text-gray-400' for=''>
                 Email Address
               </label>
-              <input class='create-input' type='email' placeholder='e. g.  “Usman@access energy ”'>
+              <input v-model='email' class='create-input' type='email' placeholder='e. g.  “Usman@access energy ”'>
             </div>
+
+            <div class='form-group mb-5'>
+              <label class='text-xs  block leading-5 uppercase font-bold text-gray-400' for=''>
+                Phone Number
+              </label>
+              <input v-model='phone' class='create-input' type='tel' placeholder='e. g.  “+234 810 455 6788”'>
+            </div>
+
+            <div class='form-group mb-5'>
+              <label class='text-xs  block leading-5 uppercase font-bold text-gray-400' for=''>
+                Website
+              </label>
+              <input v-model='phone' class='create-input' type='tel' placeholder='e. g.  “plantbio.io”'>
+            </div>
+
+
 
             <div class='form-group mb-5'>
               <label class='text-xs  block leading-5 uppercase font-bold text-gray-400' for=''>
@@ -221,8 +237,8 @@
 
 
             <div class='text-xs mt-7 text-white'>
-              <p>9411333445</p>
-              <p>ua@plantbio.io</p>
+              <p>{{phone ? phone : '9411333445'}}</p>
+              <p>{{email ? email : 'ua@plantbio.io'}}</p>
               <p>plantbio.io</p>
             </div>
           </div>
@@ -244,6 +260,9 @@ export default {
       companyName: '',
       role:'',
       fullname: '',
+      email: '',
+      phone: '',
+      web: '',
       activeCard: 'front'
     }
   }

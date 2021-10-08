@@ -158,7 +158,7 @@
                 </div>
               </div>
             </td>
-            <td class='text-sm leading-5 text-bizz-black-100 font-medium'>
+            <td class='text-sm leading-5 text-center text-bizz-black-100 font-medium'>
               17 May 2021
             </td>
             <td class='text-sm leading-5 text-center text-bizz-green font-medium'>

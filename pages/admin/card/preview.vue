@@ -8,7 +8,7 @@
           </svg>
           <span>Back to Templates</span>
         </nuxt-link>
-        <p class='text-2xl leading-6 font-bold mt-3 text-bizz-black-200'>Create Card Template</p>
+        <p class='text-2xl leading-6 font-bold mt-3 text-bizz-black-200'>Preview Card Template</p>
       </div>
       <NavMenu/>
     </header>
