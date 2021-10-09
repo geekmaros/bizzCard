@@ -1,13 +1,13 @@
 <template>
-  <section class='pl-41px pt-5 pr-42px pb-10'>
+  <section class='px-5 lg:px-0 lg:pr-42px lg:pl-41px pt-10 md:pt-5 pb-10'>
     <header class='flex justify-between items-center'>
-      <span class='page-title text-22px font-medium text-bizz-black-100 leading-8'>Overview</span>
+      <span class='page-title text-lg font-bold md:font-medium md:text-22px  text-bizz-black-100 leading-8'>Overview</span>
       <NavMenu/>
     </header>
 
-    <div class='mt-48px'>
+    <div class='mt-5 md:mt-12'>
 
-      <div class='table-section mt-20 rounded-2xl bg-white shadow-2xl p-29px'>
+      <div class='table-section md:mt-12 rounded-2xl bg-white shadow-2xl p-29px'>
         <div class='header flex justify-between items-center'>
           <div class='left'>
             <span class='font-bold text-base leading-6'>Latest Users</span>
@@ -24,7 +24,7 @@
           </p>
         </div>
 
-        <div class='user-icon-wrapper grid grid-cols-4 gap-8 mt-5'>
+        <div class='user-icon-wrapper grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-5'>
           <div v-for='i in 12' :key='i' class='profile-info pb-8 border max-w-xs rounded-2xl shadow cursor-pointer transition-all duration-300 transform hover:-translate-y-2 '>
             <div class='header items-center border-b pb-8 pt-8 '>
               <div class='pp-header flex justify-end pr-5'>

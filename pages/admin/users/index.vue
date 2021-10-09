@@ -1,7 +1,7 @@
 <template>
-  <section class='pl-41px pt-5 pr-42px pb-10'>
+  <section class='px-5 lg:px-0 lg:pr-42px lg:pl-41px pt-10 md:pt-5 pb-10'>
     <header class='flex justify-between items-center'>
-      <span class='page-title text-22px font-medium text-bizz-black-100 leading-8'>Users</span>
+      <span class='page-title text-lg font-bold md:font-medium md:text-22px  text-bizz-black-100 leading-8'>Users</span>
       <NavMenu/>
     </header>
 
@@ -15,7 +15,7 @@
       </span>
       </p>
 
-      <div class='stat-wrapper grid grid-cols-4 gap-6 mt-12'>
+      <div class='stat-wrapper grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12'>
         <div class='stat-box p-29px rounded-2xl transition-all cursor-pointer transform hover:-translate-y-2 duration-300 bg-white max-w-lg shadow-lg'>
           <div class='stat-icon flex items-center space-x-3'>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,42 +124,42 @@
           </p>
         </div>
 
-        <div class='table-wrapper mt-5'>
-          <table class='w-full'>
+        <div class='table-wrapper mt-8 w-full overflow-x-scroll lg:overflow-x-hidden pb-6'>
+          <table class='w-full items-center table-auto'>
             <thead>
             <tr class='font-bold text-xs text-gray-400 leading-5'>
-              <th>
-                <input class='-ml-2' type='checkbox'>
+              <th class='px-3'>
+                <input class='-ml-2d' type='checkbox'>
               </th>
-              <th>
+              <th class='px-3'>
                 Fullname
               </th>
-              <th>
+              <th class='px-3'>
                 Joined
               </th>
-              <th>
+              <th class='px-3'>
                 Cards
               </th>
-              <th>
+              <th class='px-3'>
                 Email
               </th>
-              <th>
+              <th class='px-3'>
                 Card Type
               </th>
-              <th>
+              <th class='px-3'>
                 Views
               </th>
-              <th>
+              <th class='px-3'>
                 Option
               </th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class=''>
             <tr v-for='i in 8' :key='i' class='cursor-pointer odd:bg-gray-100s'>
-              <td>
+              <td class='px-3 md:mr-0 block whitespace-nowrap'>
                 <input class='checked:ring-0 ' type='checkbox'>
               </td>
-              <td class='pt-3'>
+              <td class='pt-3 px-3 whitespace-nowrap pr-6'>
                 <div class='flex justify-center items-center space-x-4'>
                   <img class='rounded-full w-36px h-36px' src='/usertableavatar.png' alt=''>
                   <div class='name'>
@@ -168,31 +168,31 @@
                   </div>
                 </div>
               </td>
-              <td class='text-sm leading-5 text-center text-bizz-black-100 font-medium'>
+              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
                 17 May 2021
               </td>
-              <td class='text-sm leading-5 text-center text-bizz-green font-medium'>
+              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-green font-medium'>
                 2
               </td>
-              <td class='text-sm leading-5 text-center text-bizz-black-100 font-medium'>
+              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
                 enfazdel@jetolmu.io
               </td>
-              <td class='text-sm leading-5 text-center text-bizz-black-100 font-medium'>
+              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
                 Middle Level
               </td>
-              <td class='text-sm flex justify-center items-center leading-5 flex text-bizz-green font-medium'>
+              <td class='text-sm px-3 flex justify-center items-center whitespace-nowrap leading-5 flex text-bizz-green font-medium'>
                 <div class='rounded-full text-center mb-3 px-4 bg-bizz-green bg-opacity-10 py-2'>
                   203,000
                 </div>
               </td>
 
-              <td class='text-sm cursor-pointer leading-5 text-bizz-black-100 font-medium'>
-                <nuxt-link to='/admin/users/randomUser' class='flex space-x-2 mx-auto w-9/12 border rounded-full px-8 py-2 items-center justify-center'>
+              <td class='text-sm px-3 cursor-pointer leading-5 whitespace-nowrap text-bizz-black-100 font-medium'>
+                <div class='flex space-x-1 mx-auto w-9/12 border rounded-full px-7  py-2 items-center justify-center'>
                   <span>View</span>
-                  <svg width="22" height="23" class='cu' viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5895 9.96653C7.93393 9.6221 8.49236 9.6221 8.83679 9.96653L10.859 11.9888L12.8813 9.96653C13.2257 9.6221 13.7842 9.6221 14.1286 9.96653C14.473 10.3109 14.473 10.8694 14.1286 11.2138L11.4827 13.8597C11.1383 14.2041 10.5798 14.2041 10.2354 13.8597L7.5895 11.2138C7.24507 10.8694 7.24507 10.3109 7.5895 9.96653Z" fill="#040415"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
-                </nuxt-link>
+                </div>
               </td>
 
 
@@ -205,6 +205,7 @@
 
           </div>
         </div>
+
       </div>
     </div>
   </section>

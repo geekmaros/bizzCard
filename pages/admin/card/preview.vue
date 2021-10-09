@@ -1,5 +1,5 @@
 <template>
-  <section class='pl-41px pt-5 font-serif pr-42px bg-white pb-16 '>
+  <section class='pl-41px pt-10 md:pt-5 font-serif pr-42px bg-white pb-16 '>
     <header class='flex justify-between items-center'>
       <div>
         <nuxt-link to='/admin/card/create' class='page-title hover:text-bizz-orange flex items-center space-x-4 text-sm font-medium text-bizz-black-100 leading-8'>
@@ -43,8 +43,8 @@
     </nav>
 
 
-    <main class='grid grid-cols-12 gap-7 pt-10'>
-      <div class='sub-main col-span-7'>
+    <main class='grid grid-cols-12 gap-7 md:pt-10'>
+      <div class='sub-main col-span-12 md:col-span-7'>
 
           <div :class="preview ? 'pb-10 border-b border-gray-200' : ''" v-if='preview' class='form-group'>
             <p class='text-base  font-medium text-bizz-black-400'>
@@ -61,24 +61,24 @@
         <div :class="!preview ? 'pb-10 border-b border-gray-200' : ''" v-if='!preview' class='form-group'>
           <img src='/svg/preview.svg' alt=''>
           <p class='text-28px  font-bold text-bizz-black-400'>
-            <span class='block text-sidebar leading-5'>Card Template Created</span>
+            <span class='block text-sidebar md:leading-5'>Card Template Created</span>
             <span class='text-2xl font-normal w-7/12 mt-8 block text-gray-400'>Your template has been successfully created</span>
           </p>
         </div>
 
 
 
-          <div class='submit-wrapper flex justify-between mt-10'>
-            <p @click='preview = !preview' role='button' :class="!preview ? 'px-16':''" class='flex justify-center items-center space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
-              <span>{{preview ? 'Complete Upload' : 'Finish'}}</span>
-              <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69175 1.09943C6.95215 0.859063 7.35811 0.875298 7.59848 1.1357L9.67156 3.38151C9.89845 3.6273 9.89846 4.00617 9.67157 4.25197L7.59849 6.49783C7.35812 6.75823 6.95216 6.77447 6.69176 6.5341C6.43136 6.29373 6.41512 5.88777 6.65548 5.62737L7.73452 4.45841L1.50006 4.45841C1.14568 4.45841 0.858398 4.17112 0.858398 3.81674C0.858398 3.46236 1.14568 3.17507 1.50006 3.17507L7.7345 3.17507L6.65549 2.00616C6.41512 1.74576 6.43135 1.33981 6.69175 1.09943Z" fill="#FCFCFD"/>
-              </svg>
-            </p>
+        <div class='submit-wrapper flex flex-col lg:flex-row  justify-between md:mt-10'>
+          <div @click='preview = !preview' role='button' class='flex justify-center md:justify-start items-center mb-4 md:mb-5 lg:mb-0 space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
+            <span>{{preview ? 'Complete Upload' : 'Finish'}}</span>
+            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69175 1.09943C6.95215 0.859063 7.35811 0.875298 7.59848 1.1357L9.67156 3.38151C9.89845 3.6273 9.89846 4.00617 9.67157 4.25197L7.59849 6.49783C7.35812 6.75823 6.95216 6.77447 6.69176 6.5341C6.43136 6.29373 6.41512 5.88777 6.65548 5.62737L7.73452 4.45841L1.50006 4.45841C1.14568 4.45841 0.858398 4.17112 0.858398 3.81674C0.858398 3.46236 1.14568 3.17507 1.50006 3.17507L7.7345 3.17507L6.65549 2.00616C6.41512 1.74576 6.43135 1.33981 6.69175 1.09943Z" fill="#FCFCFD"/>
+            </svg>
+          </div>
 
-            <p class='text-bizz-black-200 leading-4 font-bold flex items-center space-x-3'>
-              <span>Auto saving</span>
-              <span class=''>
+          <p class='text-bizz-black-200 leading-4 font-bold flex justify-center lg:justify-start items-center space-x-3'>
+            <span>Auto saving</span>
+            <span class=''>
                 <svg width="16" class='animate-spin' height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.19987 1.72089C7.84549 1.72089 7.5582 2.00817 7.5582 2.36255V4.28755C7.5582 4.64194 7.84549 4.92922 8.19987 4.92922C8.55425 4.92922 8.84154 4.64194 8.84154 4.28755V2.36255C8.84154 2.00817 8.55425 1.72089 8.19987 1.72089Z" fill="#23262F"/>
 <path d="M8.19987 11.3459C7.84549 11.3459 7.5582 11.6332 7.5582 11.9876V13.9126C7.5582 14.2669 7.84549 14.5542 8.19987 14.5542C8.55425 14.5542 8.84154 14.2669 8.84154 13.9126V11.9876C8.84154 11.6332 8.55425 11.3459 8.19987 11.3459Z" fill="#23262F"/>
@@ -90,9 +90,8 @@
 <path d="M5.93127 5.8689C6.18186 5.61831 6.18186 5.21203 5.93127 4.96144L4.57009 3.60026C4.31951 3.34968 3.91323 3.34968 3.66264 3.60026C3.41205 3.85085 3.41205 4.25713 3.66264 4.50772L5.02382 5.8689C5.27441 6.11948 5.68069 6.11948 5.93127 5.8689Z" fill="#23262F"/>
 </svg>
               </span>
-            </p>
-          </div>
-      </div>
+          </p>
+        </div>      </div>
 
     </main>
   </section>

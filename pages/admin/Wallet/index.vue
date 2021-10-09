@@ -1,18 +1,18 @@
 <template>
-  <section class="pl-41px pt-5 pr-42px pb-10">
+  <section class='px-5 lg:px-0 lg:pr-42px lg:pl-41px pt-10 md:pt-5 pb-10'>
     <header class="flex justify-between items-center">
       <span
-        class="page-title text-22px font-medium text-bizz-black-100 leading-8"
+        class="page-title ttext-lg font-bold md:font-medium md:text-22px  text-bizz-black-100 leading-8"
         >Wallets</span
       >
       <NavMenu />
     </header>
 
-    <div class="mt-70">
-           <div class="table-section mt-20 rounded-2xl bg-white shadow-2xl p-29px">
+    <div class="mt-12">
+           <div class="table-section mt-12 rounded-2xl bg-white shadow-2xl p-29px">
         <div class="">
           <span class="font-bold text-base leading-6">Wallets</span>
-          <div class="grid grid-cols-3 gap-6 mb-10 mt-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10 mt-8">
             <!-- 1st Box -->
 
             <div class="w-auto bg-bizz-orange p-6 flex items-center rounded-xl">
@@ -125,145 +125,80 @@
           </p>
         </div>
 
-        <div class="table-wrapper mt-5">
-          <table class="w-full">
-            <thead>
-              <tr class="font-bold text-xs text-gray-400 leading-5">
-                <th>
-                  <input class="-ml-2" type="checkbox" />
-                </th>
-                <th>Transaction ID</th>
-                <th class='text-center'>Time</th>
-                <th>Amount</th>
-                <th>Payment Type</th>
-                <th>Subscription Type</th>
-                <th>Option</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for="i in 8"
-                :key="i"
-                class="cursor-pointer odd:bg-gray-100s"
-              >
-                <td>
-                  <input class="checked:ring-0" type="checkbox" />
-                </td>
-                <td class="pt-3">
-                  <div class="flex justify-center items-center space-x-4">
-                    <div class="name">
-                      <span
-                        class="
-                          text-xs
-                          block
-                          leading-5
-                          font-bold
-                          text-bizz-black-100
-                        "
-                        >Usman Abiola</span
-                      >
-                      <span class="text-xs leading-5 text-gray-400"
-                        >#213567</span
-                      >
-                    </div>
-                  </div>
-                </td>
-                <td class="text-xs leading-5 text-center text-bizz-black-100 font-medium">
-                  17 May 2021 10:10pm
-                </td>
-                <td
-                  class="
-                    text-sm
-                    leading-5
-                    text-center text-bizz-green
-                    font-medium
-                  "
-                >
-                  $1903
-                </td>
-                <td
-                  class="
-                    text-sm
-                    leading-5
-                    text-center text-bizz-black-100
-                    font-medium
-                  "
-                >
-                  via PayPal
-                </td>
-                <td
-                  class="
-                    text-sm
-                    leading-5
-                    text-center text-bizz-black-100
-                    font-medium
-                  "
-                >
-                  Corporate Module
-                </td>
+             <div class='table-wrapper mt-8 w-full overflow-x-scroll lg:overflow-x-hidden pb-6'>
+               <table class='w-full items-center table-auto'>
+                 <thead>
+                 <tr class='font-bold text-xs text-gray-400 leading-5'>
+                   <th class='px-3'>
+                     <input class='-ml-2d' type='checkbox'>
+                   </th>
+                   <th class='px-3'>
+                     Transaction ID
+                   </th>
+                   <th class='px-3'>
+                     Time
+                   </th>
+                   <th class='px-3'>
+                     Amount
+                   </th>
+                   <th class='px-3'>
+                     Payment type
+                   </th>
+                   <th class='px-3'>
+                     Subscription Type
+                   </th>
+                   <th class='px-3'>
+                     Option
+                   </th>
+                 </tr>
+                 </thead>
+                 <tbody class=''>
+                 <tr v-for='i in 8' :key='i' class='cursor-pointer odd:bg-gray-100s'>
+                   <td class='px-3 md:mr-0 block whitespace-nowrap'>
+                     <input class='checked:ring-0 ' type='checkbox'>
+                   </td>
+                   <td class='pt-3 px-3 whitespace-nowrap pr-6'>
+                     <div class='flex justify-center items-center space-x-4'>
+                       <img class='rounded-full w-36px h-36px' src='/usertableavatar.png' alt=''>
+                       <div class='name'>
+                         <span class='text-xs block leading-5 font-bold text-bizz-black-100'>Usman Abiola</span>
+                         <span class='text-xs leading-5 text-gray-400'>#213567</span>
+                       </div>
+                     </div>
+                   </td>
+                   <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
+                     17 May 2021  10:10pm
+                   </td>
+                   <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-green font-medium'>
+                     $1903
+                   </td>
+                   <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
+                     via PayPal
+                   </td>
+                   <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
+                     Corporate Module
+                   </td>
+                   <td class='text-sm px-3 cursor-pointer leading-5 whitespace-nowrap text-bizz-black-100 font-medium'>
+                     <div class='flex space-x-1 mx-auto w-9/12 border rounded-full px-7  py-2 items-center justify-center'>
+                       <span>View</span>
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                       </svg>
+                     </div>
+                   </td>
 
-                <td
-                  class="
-                    text-sm
-                    cursor-pointer
-                    leading-5
-                    text-bizz-black-100
-                    font-medium
-                  "
-                >
-                  <div
-                    class="
-                      flex
-                      space-x-2
-                      mx-auto
-                      w-9/12
-                      border
-                      rounded-full
-                      px-8
-                      py-2
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <span>View</span>
-                    <svg
-                      width="22"
-                      height="23"
-                      class="cu"
-                      viewBox="0 0 22 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M7.5895 9.96653C7.93393 9.6221 8.49236 9.6221 8.83679 9.96653L10.859 11.9888L12.8813 9.96653C13.2257 9.6221 13.7842 9.6221 14.1286 9.96653C14.473 10.3109 14.473 10.8694 14.1286 11.2138L11.4827 13.8597C11.1383 14.2041 10.5798 14.2041 10.2354 13.8597L7.5895 11.2138C7.24507 10.8694 7.24507 10.3109 7.5895 9.96653Z"
-                        fill="#040415"
-                      />
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
-          <div class="see-more flex justify-center items-center mt-6">
-            <nuxt-link
-              to="#"
-              class="
-                text-center
-                mx-auto
-                text-gray-700
-                font-bold
-                underline
-                text-sm
-                leading-5
-              "
-              >See All Users</nuxt-link
-            >
-          </div>
-        </div>
-      </div>
+                 </tr>
+                 </tbody>
+               </table>
+
+               <div class='see-more flex justify-center items-center mt-6'>
+                 <nuxt-link to='#' class='text-center mx-auto text-gray-700  font-bold underline text-sm leading-5'>See All Users</nuxt-link>
+
+               </div>
+             </div>
+
+           </div>
     </div>
   </section>
 </template>

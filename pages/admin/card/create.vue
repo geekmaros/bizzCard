@@ -1,5 +1,5 @@
 <template>
-  <section class='pl-41px pt-5 font-serif pr-42px bg-white pb-10 '>
+  <section class='px-5 lg:px-0 lg:pr-42px lg:pl-41px pt-10 md:pt-5 font-serif  bg-white pb-10 overflow-x-hidden '>
     <header class='flex justify-between items-center'>
       <div>
         <nuxt-link to='/admin/' class='page-title hover:text-bizz-orange flex items-center space-x-4 text-sm font-medium text-bizz-black-100 leading-8'>
@@ -13,10 +13,10 @@
       <NavMenu/>
     </header>
 
-    <nav class='flex mt-12 w-full justify-between items-center pb-5 border-b border-gray-100'>
-      <div class='left flex items-center space-x-3'>
+    <nav class='flex flex-col md:flex-row mt-12 w-full justify-between md:items-center pb-5 border-b border-gray-100'>
+      <div class='left flex justify-between md:justify-start items-center space-x-3'>
         <div @click="activeCard = 'front'" :class="activeCard === 'front' ? 'text-bizz-orange border-bizz-orange border font-bold' : ''" class='bc-front font-medium  cursor-pointer  py-1.5 px-2 rounded-full   flex items-center space-x-3 text-sm leading-4'>
-          <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg v-show='activeCard === "front" ' width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.394 0.843492C6.66455 0.593754 7.08632 0.610623 7.33606 0.881169L9.48991 3.21448C9.72564 3.46985 9.72564 3.86347 9.48991 4.11885L7.33606 6.45221C7.08633 6.72276 6.66456 6.73963 6.39401 6.4899C6.12346 6.24016 6.10659 5.81839 6.35632 5.54784L7.47739 4.33333L1.00004 4.33333C0.63185 4.33333 0.333374 4.03486 0.333373 3.66667C0.333373 3.29848 0.63185 3 1.00004 3L7.47737 3L6.35633 1.78555C6.10659 1.515 6.12346 1.09323 6.394 0.843492Z" fill="currentColor"/>
           </svg>
 
@@ -25,11 +25,14 @@
         </div>
 
         <div @click='activeCard = "back"' :class="activeCard === 'back' ? 'text-bizz-orange border-bizz-orange border font-bold' : ''" class='bc-back font-medium cursor-pointer rounded-full text-gray-500 py-1.5 px-2 flex items-center space-x-3 text-sm leading-4'>
+          <svg v-if='activeCard === "back" ' width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.394 0.843492C6.66455 0.593754 7.08632 0.610623 7.33606 0.881169L9.48991 3.21448C9.72564 3.46985 9.72564 3.86347 9.48991 4.11885L7.33606 6.45221C7.08633 6.72276 6.66456 6.73963 6.39401 6.4899C6.12346 6.24016 6.10659 5.81839 6.35632 5.54784L7.47739 4.33333L1.00004 4.33333C0.63185 4.33333 0.333374 4.03486 0.333373 3.66667C0.333373 3.29848 0.63185 3 1.00004 3L7.47737 3L6.35633 1.78555C6.10659 1.515 6.12346 1.09323 6.394 0.843492Z" fill="currentColor"/>
+          </svg>
           <span>Card Back Side </span>
         </div>
       </div>
 
-      <div class='right'>
+      <div class='right mt-2 md:mt-0'>
         <div class='font-bold py-1.5 flex items-center space-x-8 px-2 text-sm leading-4'>
           <span class='cursor-pointer block text-gray-400'>Overview</span>
           <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +47,7 @@
 
 
     <main class='grid grid-cols-12 gap-7 pt-10'>
-      <div class='sub-main col-span-7'>
+      <div class='sub-main order-2 md:order-1  col-span-12 md:col-span-6 lg:col-span-7'>
         <form action='#'>
           <div :class="activeCard === 'back' ? 'pb-10 border-b border-gray-200' : ''" class='form-group'>
             <label class='text-base  font-medium text-bizz-black-400' for=''>
@@ -198,15 +201,15 @@
 
           </div>
 
-          <div class='submit-wrapper flex justify-between mt-10'>
-            <p @click="() => $router.push('/admin/card/preview')" role='button' class='flex items-center space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
-              <span>Create Template</span>
+          <div class='submit-wrapper flex flex-col lg:flex-row  justify-between mt-10'>
+            <p @click="() => $router.push('/admin/card/preview')" role='button' class='flex justify-self-start items-center mb-4 md:mb-5 lg:mb-0 space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold'>
+              <span>{{activeCard === 'front' ? 'Create Template' : 'Complete Upload'}}</span>
               <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69175 1.09943C6.95215 0.859063 7.35811 0.875298 7.59848 1.1357L9.67156 3.38151C9.89845 3.6273 9.89846 4.00617 9.67157 4.25197L7.59849 6.49783C7.35812 6.75823 6.95216 6.77447 6.69176 6.5341C6.43136 6.29373 6.41512 5.88777 6.65548 5.62737L7.73452 4.45841L1.50006 4.45841C1.14568 4.45841 0.858398 4.17112 0.858398 3.81674C0.858398 3.46236 1.14568 3.17507 1.50006 3.17507L7.7345 3.17507L6.65549 2.00616C6.41512 1.74576 6.43135 1.33981 6.69175 1.09943Z" fill="#FCFCFD"/>
               </svg>
             </p>
 
-            <p class='text-bizz-black-200 leading-4 font-bold flex items-center space-x-3'>
+            <p class='text-bizz-black-200 leading-4 font-bold flex justify-center lg:justify-start items-center space-x-3'>
               <span>Auto saving</span>
               <span class=''>
                 <svg width="16" class='animate-spin' height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +227,7 @@
           </div>
         </form>
       </div>
-      <div class='preview pl-5 pr-5 pb-6 pt-7 col-span-5 self-start bg-white shadow-2xl rounded-2xl'>
+      <div class='preview order-1 md:order-2 col-span-12 md:col-span-6 lg:col-span-5 pl-5 pr-5 pb-6 pt-7  self-start bg-white shadow-2xl rounded-2xl'>
         <p class='text-2xl font-medium mt-3 text-bizz-black-200'>Preview Card</p>
 
         <div class='card-preview mt-5 pl-5 py-6 pr-16 pb-12 flex justify-between items-start space-x-8 rounded-2xl bg-bizz-green bg-opacity-80'>

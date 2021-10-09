@@ -1,14 +1,14 @@
 <template>
-  <section class='pl-41px pt-5 pr-42px pb-10'>
+  <section class='px-5 lg:px-0 lg:pr-42px lg:pl-41px pt-10 md:pt-5 pb-10'>
     <header class='flex justify-between items-center'>
-      <span class='page-title text-22px font-medium text-bizz-black-100 leading-8'>User Profile</span>
+      <span class='page-title text-lg font-bold md:font-medium md:text-22px font-medium text-bizz-black-100 leading-8'>User Profile</span>
       <NavMenu/>
     </header>
 
     <div class='mt-41px grid grid-cols-12 gap-x-6'>
-      <div class='col-span-9 bg-white rounded-2xl shadow-2xl '>
+      <div class='col-span-12 order-2 lg:order-1 lg:col-span-9 bg-white rounded-2xl shadow-2xl '>
       <div class='profile-info p-29px border-b'>
-        <div class='header flex items-center  justify-between'>
+        <div class='header flex flex-col lg:flex-row items-center  justify-between'>
           <div class='left flex items-center space-x-3'>
             <img class='user-avatar rounded-full' src='/user-avatar.png' alt=''>
             <div>
@@ -17,16 +17,16 @@
             </div>
           </div>
 
-          <div class='right flex items-center space-x-3'>
+          <div class='right flex items-center space-x-3 mt-4 lg:mt-0'>
             <button type='button' class='px-6 rounded-lg font-bold py-2 text-xs bg-bizz-dark-blue text-bizz-orange'> View Cards</button>
-            <button type='button' class='px-6 rounded-lg font-bold py-2 text-xs bg-white border text-bizz-blue'> View Cards</button>
+            <button type='button' class='px-6 rounded-lg font-bold py-2 text-xs bg-white border text-bizz-blue'> Change Photo</button>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3678 12.3868C6.3438 12.3868 7.13501 11.5957 7.13501 10.6196C7.13501 9.6436 6.3438 8.85242 5.3678 8.85242C4.3918 8.85242 3.60059 9.6436 3.60059 10.6196C3.60059 11.5957 4.3918 12.3868 5.3678 12.3868ZM12.4359 10.6197C12.4359 11.5957 11.6447 12.3869 10.6687 12.3869C9.69266 12.3869 8.90148 11.5957 8.90148 10.6197C8.90148 9.64363 9.69266 8.85244 10.6687 8.85244C11.6447 8.85244 12.4359 9.64363 12.4359 10.6197ZM15.9708 12.3869C16.9468 12.3869 17.738 11.5957 17.738 10.6197C17.738 9.64363 16.9468 8.85244 15.9708 8.85244C14.9947 8.85244 14.2035 9.64363 14.2035 10.6197C14.2035 11.5957 14.9947 12.3869 15.9708 12.3869Z" fill="#2772F0"/>
             </svg>
           </div>
         </div>
 
-        <div class='detail grid grid-cols-2 gap-5 mt-8 '>
+        <div class='detail grid md:grid-cols-2 gap-5 mt-8 '>
           <div class='border rounded-3xl flex items-center space-x-4 py-5 pl-6'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9011 4.23438H7.40581H7.40571C6.69448 4.23437 6.10748 4.23436 5.62929 4.27342C5.13262 4.31401 4.67606 4.40109 4.24722 4.6196C3.58217 4.95846 3.04147 5.49916 2.70261 6.16421C2.4841 6.59305 2.39701 7.04962 2.35643 7.54629C2.31737 8.02447 2.31737 8.61147 2.31738 9.3227V9.3228V13.2837V13.2838C2.31737 13.995 2.31737 14.582 2.35643 15.0601C2.39701 15.5568 2.4841 16.0134 2.70261 16.4423C3.04147 17.1073 3.58217 17.648 4.24722 17.9868C4.67606 18.2053 5.13262 18.2925 5.62929 18.333C6.10751 18.3721 6.69454 18.3721 7.40583 18.3721H14.9011C15.6124 18.3721 16.1994 18.3721 16.6776 18.333C17.1743 18.2925 17.6308 18.2053 18.0597 17.9868C18.7247 17.648 19.2654 17.1073 19.6043 16.4423C19.8228 16.0134 19.9099 15.5568 19.9505 15.0601C19.9895 14.582 19.9895 13.995 19.9895 13.2838V13.2837V9.32278V9.32268C19.9895 8.61146 19.9895 8.02446 19.9505 7.54628C19.9099 7.04962 19.8228 6.59305 19.6043 6.16421C19.2654 5.49916 18.7247 4.95846 18.0597 4.6196C17.6308 4.40109 17.1743 4.31401 16.6776 4.27342C16.1994 4.23436 15.6124 4.23437 14.9012 4.23438H14.9011ZM5.05043 6.19416C5.18862 6.12375 5.38673 6.06638 5.77412 6.03473C6.17182 6.00224 6.68634 6.00155 7.44322 6.00155H14.8655C15.6224 6.00155 16.1369 6.00224 16.5346 6.03473C16.922 6.06638 17.1201 6.12375 17.2583 6.19416C17.5908 6.36359 17.8612 6.63394 18.0306 6.96646C18.101 7.10466 18.1584 7.30276 18.19 7.69015C18.2225 8.08786 18.2232 8.60237 18.2232 9.35925V13.2471C18.2232 14.004 18.2225 14.5185 18.19 14.9163C18.1584 15.3036 18.101 15.5017 18.0306 15.6399C17.8612 15.9724 17.5908 16.2428 17.2583 16.4122C17.1201 16.4826 16.922 16.54 16.5346 16.5716C16.1369 16.6041 15.6224 16.6048 14.8655 16.6048H7.44322C6.68634 16.6048 6.17182 16.6041 5.77412 16.5716C5.38673 16.54 5.18862 16.4826 5.05043 16.4122C4.71791 16.2428 4.44755 15.9724 4.27813 15.6399C4.20771 15.5017 4.15034 15.3036 4.11869 14.9163C4.0862 14.5185 4.08551 14.004 4.08551 13.2471V9.35925C4.08551 8.60237 4.0862 8.08786 4.11869 7.69015C4.15034 7.30276 4.20771 7.10466 4.27813 6.96646C4.44755 6.63394 4.71791 6.36359 5.05043 6.19416ZM7.23576 7.92373C6.83335 7.64767 6.28334 7.75011 6.00728 8.15252C5.73121 8.55494 5.83365 9.10495 6.23607 9.38101L9.65438 11.726C10.558 12.3458 11.7499 12.3458 12.6535 11.726L16.0718 9.38101C16.4742 9.10495 16.5766 8.55494 16.3006 8.15252C16.0246 7.75011 15.4745 7.64767 15.0721 7.92373L11.6538 10.2687C11.3526 10.4753 10.9553 10.4753 10.6541 10.2687L7.23576 7.92373Z" fill="#2772F0"/>
@@ -73,7 +73,7 @@
             <div class='profile p-29px border-b'>
               <h2 class='text-black font-bold'>Profile Settings</h2>
 
-              <div class='input-grid grid grid-cols-3 gap-10 mt-5'>
+              <div class='input-grid grid md:grid-cols-3 gap-10 mt-5'>
                 <div class='form-group relative h-42px rounded-3xl flex flex-col'>
                   <label class='text-10px absolute ml-5 px-1 bg-white -mt-2 text-gray-400'>Firstname</label>
                   <input placeholder='Firstname' value='Linh' class='text-xs pl-6  py-3 focus:ring-0 focus:border-2 focus:border-bizz-orange rounded-full border-gray-200 text-black font-bold' type='text'>
@@ -125,7 +125,7 @@
             <div class='account p-29px border-b'>
               <h2 class='text-black font-bold'>Account Settings</h2>
 
-              <div class='input-grid grid grid-cols-3 gap-10 mt-5'>
+              <div class='input-grid grid md:grid-cols-3 gap-10 mt-5'>
                 <div class='form-group relative h-42px rounded-3xl flex flex-col'>
                   <label class='text-10px absolute ml-5 px-1 bg-white -mt-2 text-gray-400'>Default Language</label>
                   <select class='text-xs pl-6  py-3 focus:ring-0 focus:border-2 focus:border-bizz-orange rounded-full border-gray-200 text-black font-bold'>
@@ -146,7 +146,7 @@
               </div>
             </div>
 
-            <div class='button-wrapper p-29px mt-10'>
+            <div class='button-wrapper p-29px mt-5 md:mt-10'>
               <button role='button' class='flex justify-center items-center space-x-4 bg-bizz-orange rounded-lg px-4 py-2 text-white font-bold' @click='preview = !preview'>
                 <span>Submit</span>
               </button>
@@ -155,7 +155,7 @@
           </form>
         </div>
       </div>
-      <div class='col-span-3 bg-white rounded-2xl self-start pb-10 shadow-lg'>
+      <div class='col-span-12 order-1 lg:order-2 mt-7 lg:mt-0  lg:col-span-3 bg-white rounded-2xl self-start pb-10 shadow-lg'>
         <div class='profile-info '>
           <div class='header items-center border-b pb-8 pt-8 '>
          <div class='pp-header flex justify-between items-center pr-5'>
