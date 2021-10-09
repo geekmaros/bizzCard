@@ -114,7 +114,7 @@
               <textarea class='create-input' rows='3' placeholder='e. g.  “20 Belview Estate California'></textarea>
             </div>
 
-            <div class='grid grid-cols-3 gap-5 pb-5 border-b border-gray-300'>
+            <div class='grid md:grid-cols-3 gap-5 pb-5 border-b border-gray-300'>
               <div class='form-group mb-5'>
                 <label class='text-xs  block leading-5 uppercase font-bold text-gray-400' for=''>
                   Company display name

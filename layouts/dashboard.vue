@@ -18,6 +18,15 @@ export default {
       showAside: true,
     }
   },
+  watch: {
+    $route() {
+      const deviceChecker = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+      if (deviceChecker){
+        this.showAside = false;
+      }
+
+    },
+  },
   mounted(){
     if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
       this.showAside = false
