@@ -12,11 +12,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/forms": "^0.3.4",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.14.5",
     "sass": "^1.42.1"
   },
   "devDependencies": {
