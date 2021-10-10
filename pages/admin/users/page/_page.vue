@@ -111,7 +111,7 @@
         <div class='header flex justify-between items-center'>
           <div class='left'>
             <span class='font-bold text-base leading-6'>Latest Users</span>
-            <span class='block text-gray-400 text-xs'>890,344 Users</span>
+            <span class='block text-gray-400 text-xs'>{{allUsers.length}} Users</span>
           </div>
           <p role='button' class='btn flex ml-auto justify-center items-center font-bold space-x-2 w-40s rounded-lg text-white bg-bizz-green text-xs leading-6 px-8 py-2.5'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,87 +124,7 @@
           </p>
         </div>
 
-        <div class='table-wrapper mt-8 w-full overflow-x-scroll lg:overflow-x-hidden pb-6'>
-          <table class='w-full items-center table-auto'>
-            <thead>
-            <tr class='font-bold text-xs text-gray-400 leading-5'>
-              <th class='px-3'>
-                <input class='-ml-2d' type='checkbox'>
-              </th>
-              <th class='px-3'>
-                Fullname
-              </th>
-              <th class='px-3'>
-                Joined
-              </th>
-              <th class='px-3'>
-                Cards
-              </th>
-              <th class='px-3'>
-                Email
-              </th>
-              <th class='px-3'>
-                Card Type
-              </th>
-              <th class='px-3'>
-                Views
-              </th>
-              <th class='px-3'>
-                Option
-              </th>
-            </tr>
-            </thead>
-            <tbody class=''>
-            <tr v-for='i in 8' :key='i' class='cursor-pointer odd:bg-gray-100s'>
-              <td class='px-3 md:mr-0 block whitespace-nowrap'>
-                <input class='checked:ring-0 ' type='checkbox'>
-              </td>
-              <td class='pt-3 px-3 whitespace-nowrap pr-6'>
-                <div class='flex justify-center items-center space-x-4'>
-                  <img class='rounded-full w-36px h-36px' src='/usertableavatar.png' alt=''>
-                  <div class='name'>
-                    <span class='text-xs block leading-5 font-bold text-bizz-black-100'>Usman Abiola</span>
-                    <span class='text-xs leading-5 text-gray-400'>#213567</span>
-                  </div>
-                </div>
-              </td>
-              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
-                17 May 2021
-              </td>
-              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-green font-medium'>
-                2
-              </td>
-              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
-                enfazdel@jetolmu.io
-              </td>
-              <td class='text-sm px-3 leading-5 text-center whitespace-nowrap text-bizz-black-100 font-medium'>
-                Middle Level
-              </td>
-              <td class='text-sm px-3  justify-center items-center whitespace-nowrap leading-5 flex text-bizz-green font-medium'>
-                <div class='rounded-full text-center mb-3 px-4 bg-bizz-green bg-opacity-10 py-2'>
-                  203,000
-                </div>
-              </td>
-
-              <td class='text-sm px-3 cursor-pointer leading-5 whitespace-nowrap text-bizz-black-100 font-medium'>
-                <div class='flex space-x-1 mx-auto w-9/12 border rounded-full px-7  py-2 items-center justify-center'>
-                  <span>View</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </td>
-
-
-            </tr>
-            </tbody>
-          </table>
-
-          <div class='see-more flex justify-center items-center mt-6'>
-            <nuxt-link to='#' class='text-center mx-auto text-gray-700  font-bold underline text-sm leading-5'>See All Users</nuxt-link>
-
-          </div>
-        </div>
+      <UsersList :users="paginatedUsers" :total="allUsers.length" />
 
       </div>
     </div>
@@ -212,16 +132,21 @@
 </template>
 
 <script>
+import getUsers from '@/utils/getUsers';
+
 export default {
   name: 'UserIndex',
   layout:'dashboard',
   transition: 'layout',
- 
-  middleware({ redirect }) {
-    return redirect('301', '/admin/users/page/1');
+
+ async asyncData({ $content, params, error }) {     
+    const content = await getUsers($content, params, error);
+    return {
+      allUsers: content.updatedAllUsers,
+      paginatedUsers: content.updatedPaginatedUsers,
+    };
   },
-};
-</script>
+
 }
 </script>
 

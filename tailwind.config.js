@@ -8,6 +8,7 @@ module.exports = {
       },
       spacing: {
         "22px": "22px",
+        17: "17px",
         "29px": "29px",
         "4.2": "1.125rem",
         "36px": "36px",
@@ -52,6 +53,7 @@ module.exports = {
         "bizz-dark-blue": "#091231",
         "bizz-blue-500": "#2F80ED",
         "bizz-icon-gray": "#828282",
+        "bizz-page-top": "#28166F",
 
 
 
