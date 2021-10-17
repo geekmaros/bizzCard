@@ -20,6 +20,11 @@ module.exports = {
         "53px": "53px",
         "56px": "56px",
         "60px": "60px",
+        "64px": "64px",
+        "56px": "56px",
+        136:  "136px",
+        32:  "32px",
+        160: "160px",
         62: "62px",
         70: "70px",
         "72px": "72px",
@@ -54,9 +59,10 @@ module.exports = {
         "bizz-blue-500": "#2F80ED",
         "bizz-icon-gray": "#828282",
         "bizz-page-top": "#28166F",
-
-
-
+        "bizz-dark-brown": "#0F0411",
+        "bizz-divider" : "#353945",
+        "bizz-faint-white" : "#777E91",
+        "bizz-black" : "#0B030D",
       },
       lineHeight: {
         "12px": "12px",
@@ -65,6 +71,7 @@ module.exports = {
         160: "160%",
         "76px": "76px",
         "27px": "27px",
+        "24px": "24px",
         "30px": "30px",
         "38px": "38px",
         "48px": "48px",
@@ -83,6 +90,7 @@ module.exports = {
         "9px": "9.33px",
         "10px": "10.88px",
         "12px": "12px",
+        "16px": "16px",
         "17px": "17.7857px",
         "22px": "22px",
         "26px": "26px",
@@ -95,6 +103,7 @@ module.exports = {
         "56px": "56px",
         "64px": "64px",
         "76px": "76px",
+        "73px": "73px",
         "288px": "28.8px",
       },
       maxWidth: {
@@ -102,10 +111,14 @@ module.exports = {
         "150px": "150px",
         "240px": "240px",
         "250px": "250.67px",
+        "257px": "257.67px",
+        "262px": "262px",
         "266px": "266px",
+        "448px": "448px",
         "19rem": "19rem",
         "32rem": "32rem",
         "35rem": "35rem",
+
 
       },
       boxShadow: {
@@ -113,7 +126,9 @@ module.exports = {
       },
       borderRadius: {
         "30px": "30px",
+        "20px": "20px",
         "10px": "10px",
+        "64px": "64px",
       },
     },
   },
