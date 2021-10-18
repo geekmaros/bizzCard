@@ -1,5 +1,5 @@
 <template>
-<div>
+<section id='footer'>
   
   <div class="border-b border-t  border-bizz-faint-white px-160 mt-136 grid grid-cols-3 text-white ">
     <div class=" flex pt-80px  pb-60px border-r border-bizz-faint-white">
@@ -88,7 +88,7 @@
            </div>
          </div>
     </div>
-</div>
+</section>
 </template>
 <script>
 export default {

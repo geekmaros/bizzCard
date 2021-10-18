@@ -42,12 +42,12 @@ export default {}
 
 <style lang="scss" scoped>
 .lamp {
-  left : -300px;
+  left : -350px;
   top: 150px;
 }
 .clock {
-  right : -250px;
-  top: 200px;
+  right : -230px;
+  top: 210px;
 }
 
 </style>

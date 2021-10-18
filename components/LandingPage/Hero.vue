@@ -48,7 +48,7 @@
 
     <div class='my-10'>
       <button class="rounded-full w-12 h-12 border-2 flex justify-center items-center border-gray-600">
-        <nuxt-link to="#"
+        <nuxt-link to="#footer"
           ><svg
             width="9"
             height="14"
