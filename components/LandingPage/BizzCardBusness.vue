@@ -1,5 +1,5 @@
 <template>
-  <div class="border-b border-bizz-faint-white>">
+  <div class="border-b border-bizz-faint-white">
     <div class="px-160 py-136">
       <div class="flex flex-col justify-center items-center mb-20">
         <div class="uppercase mb-2 font-bold text-sm text-bizz-faint-white">

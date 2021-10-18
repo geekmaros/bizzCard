@@ -1,6 +1,7 @@
 <template>
  <div>
-    <div class='bg-bizz-dark-brown w-full h-full'>
+    <div class='bg-bizz-dark-brown '>
+      
     <LandingPageHeader/>
     <LandingPageHero/>
     <LandingPagePartners/>
@@ -8,6 +9,11 @@
     <LandingPageProfilecreate/>
     <LandingPageNextLevel />
     <LandingPageBizzCardBusness/>
+    <LandingPageCarousel/>
+    <LandingPageConnection/>
+    <LandingPageFooter/>
+
+
   </div>
  </div>
 </template>

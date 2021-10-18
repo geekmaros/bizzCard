@@ -1,15 +1,26 @@
 <template>
-    <div class="px-160 py-136 grid place-content-center">
-                Hello world
-    </div>
+  <div>
+    Hello World
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+// import { Splide, SplideSlide } from '@splidejs/vue-splide';
+// import { defineComponent } from 'vue';
+
+// export default defineComponent( {
+//   components: {
+//     Splide,
+//     SplideSlide,
+//   },
+
+//   setup() {
+//     const options = {
+//       rewind: true,
+//       gap   : '1rem',
+//     };
+
+//     return { options };
+//   },
+// } );
 </script>
-
-<style lang="scss" scoped>
-
-</style>

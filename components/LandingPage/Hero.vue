@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="flex justify-end text-white">
-        <img src="/Hero-Fitness.png" alt="hero-fitnes" claas="h-64" />
+      <img src="@/assets/images/hero_phone.png" alt="">
       </div>
     </div>
 
