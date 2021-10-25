@@ -2,10 +2,10 @@
   <div class="px-4 lg:pl-160">
     <div class=" sm:pt-118  grid lg:grid-cols-2  lg:mr-24">
       <div class="sm:pt-83 pt-10 pr-10">
-        <h2 class="text-gray-600 uppercase  text-xs sm:text-16px font-bold leading-10">
+        <h2 class="text-gray-600 uppercase  text-base sm:text-16px font-bold leading-10">
           Connect smarter. network faster
         </h2>
-        <div class="leading-65px sm:text-64px font-bold mb-5">
+        <div class="text-5xl lg:leading-65px lg:text-64px font-bold mb-5">
           <span class="text-white"> Make better </span>
           <span class="text-bizz-orange"> Connections </span>
         </div>
@@ -23,12 +23,12 @@
                 ml-4
                 rounded-64px
                 border-2 border-white
-                sm:px-6
-                sm:py-3
+                lg:px-6
+                lg:py-3
                 px-3
                 py-1
                 font-bold
-                text-xs sm:text-lg text-white
+                text-base lg:text-lg text-white
                 hover:bg-white
                 hover:text-black
               

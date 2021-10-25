@@ -5,7 +5,7 @@
         <div class="uppercase mb-2 font-bold text-sm text-bizz-faint-white">
           New Features added every week
         </div>
-        <div class="text-3xl lg:text-64px lg:leading-65px leading-10 font-bold">
+        <div class="text-4xl lg:text-64px lg:leading-65px leading-10 font-bold">
           <span class="text-white">BizzCard For</span>
           <span class="text-bizz-orange">Business</span>
         </div>

@@ -4,12 +4,12 @@
       class="
         rounded-64px
         bg-bizz-orange
-        sm:px-6 sm:py-3
-        px-3
-        py-1
-        font-bold
-        text-xs
-        sm:text-lg text-gray-900
+       lg:px-6
+                lg:py-3
+                px-3
+                py-1
+                font-bold
+                text-base lg:text-lg text-gray-900
         button
         flex
         items-center
