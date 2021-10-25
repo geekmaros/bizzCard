@@ -3,15 +3,15 @@
     <div class='bg-bizz-dark-brown '>
       
     <LandingPageHeader/>
-    <LandingPageHero/>
-    <LandingPagePartners/>
+   <LandingPageHero/>
+     <LandingPagePartners/>
     <LandingPageHiw/>
-    <LandingPageProfilecreate/>
-    <LandingPageNextLevel />
-    <LandingPageBizzCardBusness/>
-    <LandingPageCarousel/>
+   <LandingPageProfilecreate/>
+      <LandingPageNextLevel />
+   <LandingPageBizzCardBusness/>
+      <LandingPageCarousel/>
     <LandingPageConnection/>
-    <LandingPageFooter/>
+     <LandingPageFooter/> 
 
 
   </div>

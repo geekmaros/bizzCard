@@ -1,15 +1,15 @@
 <template>
-  <div class="pl-160">
-    <div class="pt-118  grid grid-cols-2 mr-24">
-      <div class="pt-83">
-        <h2 class="text-gray-600 uppercase text-16px font-bold leading-10">
+  <div class="px-4 lg:pl-160">
+    <div class=" sm:pt-118  grid lg:grid-cols-2  lg:mr-24">
+      <div class="sm:pt-83 pt-10 pr-10">
+        <h2 class="text-gray-600 uppercase  text-xs sm:text-16px font-bold leading-10">
           Connect smarter. network faster
         </h2>
-        <div class="leading-65px text-64px font-bold mb-5">
+        <div class="leading-65px sm:text-64px font-bold mb-5">
           <span class="text-white"> Make better </span>
           <span class="text-bizz-orange"> Connections </span>
         </div>
-        <h5 class="text-gray-500 mb-10 font-normal pr-20">
+        <h5 class="text-gray-500 mb-10 font-normal sm:pr-20">
           Bizzcard is a smart business card that helps you build and nurture new
           connections.
         </h5>
@@ -23,10 +23,12 @@
                 ml-4
                 rounded-64px
                 border-2 border-white
-                px-6
-                py-3
+                sm:px-6
+                sm:py-3
+                px-3
+                py-1
                 font-bold
-                text-lg text-white
+                text-xs sm:text-lg text-white
                 hover:bg-white
                 hover:text-black
               
@@ -41,8 +43,8 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-end text-white">
-      <img src="@/assets/images/hero_phone.png" alt="">
+      <div class="flex order-first lg:order-last justify-center sm:justify-end text-white">
+      <img src="@/assets/images/hero_phone.png" alt="hero_phone" class="pbject-contain sm:w-full sm:h-full w-8/12">
       </div>
     </div>
 
