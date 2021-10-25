@@ -43,12 +43,31 @@
               /></svg
           ></nuxt-link>
         </div>
-        <div class="space-y-6 text-sm flex flex-col font-semibold text-bizz-faint-white">
-          <nuxt-link to="/faq">FAQ</nuxt-link>
-          <nuxt-link to="/">Blog</nuxt-link>
-          <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
-          <nuxt-link to="/tos">Terms and Conditions</nuxt-link>
-          <nuxt-link to="/">Contact us</nuxt-link>
+        <div
+          class="
+            space-y-6
+            text-sm
+            flex flex-col
+            font-semibold
+            text-bizz-faint-white
+          "
+        >
+          <div>
+            <nuxt-link to="/faq">FAQ</nuxt-link>
+          </div>
+          
+          <div>
+            <nuxt-link to="/">Blog</nuxt-link>
+          </div>
+          <div>
+            <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+          </div>
+          <div>
+            <nuxt-link to="/tos">Terms and Conditions</nuxt-link>
+          </div>
+          <div>
+            <nuxt-link to="/">Contact us</nuxt-link>
+          </div>
         </div>
       </div>
       <div
@@ -107,7 +126,7 @@
               placeholder="Enter You Email"
             />
           </div>
-          <div class=" flex justify-end w-2/12">
+          <div class="flex justify-end w-2/12">
             <button
               class="
                 bg-bizz-orange-900
