@@ -43,7 +43,7 @@
               /></svg
           ></nuxt-link>
         </div>
-        <div class="space-y-6 text-sm font-semibold text-bizz-faint-white">
+        <div class="space-y-6 text-sm flex flex-col font-semibold text-bizz-faint-white">
           <nuxt-link to="/faq">FAQ</nuxt-link>
           <nuxt-link to="/">Blog</nuxt-link>
           <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
