@@ -2,7 +2,7 @@
   <div class="bg-bizz-dark-brown">
     <LandingPageHeader />
 
-    <div class="px-160 pt-136 pb-20">
+    <div class="px-5 lg:px-160 pt-10 lg:pt-136 pb-20">
       <div class="flex flex-col text-center items-center">
         <div class="max-w-640px">
           <div class="uppercase font-bold text-gray-700 text-sm mb-3">
@@ -11,7 +11,7 @@
           <div class="text-4xl text-white font-bold mb-5">
             Frequently Asked Questions
           </div>
-          <div class="font-light text-white">
+          <div class=" font-normal  text-white">
             Join Bizzcard community now to get free updates and also alot of
             freebies are waiting for you or
             <span class="text-bizz-orange-400">
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="px-160 text-center text-white">
+    <div class="px-5 lg:px-160 text-center text-white">
       <div class="flex justify-center items-center space-x-4 mb-16">
         <div    @click="handleTab(`general`)"     :class="[currentTab === 'general' ? 'bg-gray-800 px-2 py-1 text-white' : 'text-bizz-faint-white', ' rounded-2xl cursor-pointer']" >
           General

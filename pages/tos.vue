@@ -2,7 +2,7 @@
   <div class="bg-bizz-dark-brown">
     <LandingPageHeader />
 
-    <div class="px-160 py-136">
+    <div class="px-5 lg:px-160 pt-10 lg:pt-136">
      <div class=" flex flex-col
           text-center
          items-center
@@ -19,8 +19,8 @@
         <div class="uppercase font-bold text-gray-700 text-sm mb-3">
           learn how to get started
         </div>
-        <div class="text-4xl text-white font-bold mb-5">Terms and Condition</div>
-        <div class="font-light text-white">
+        <div class="text-4xl text-white font-bold mb-5">Terms and Conditions</div>
+        <div class="font-normal text-white">
           Join Bizzcard community now to get free updates and also alot of
           freebies are waiting for you or
           <span class="text-bizz-orange-400">
