@@ -4,11 +4,11 @@
       <div class="pt-83 lg:block flex items-center justify-center "> <img src="@/assets/images/phone_mockup.png"  alt="" class="object-contain lg:w-full lg:h-full w-8/12">   </div>
 
       <div class="bg-bizz-dark-brown rounded-20px p-12">
-        <div class="pt-88px text-2xl lg:text-64px lg:leading-65px leading-10 font-bold mb-6">
+        <div class="pt-88px text-5xl lg:text-64px lg:leading-65px leading-10 font-bold mb-6">
           <div class="text-white">Next-level</div>
           <div class="text-bizz-orange">Networking</div>
         </div>
-        <div class="w-auto lg:max-w-448px font-light text-lg text-bizz-faint-white mb-12">
+        <div class="w-auto lg:max-w-448px font-normal text-lg text-bizz-faint-white mb-12">
           Bizzcard makes growing your business and expanding your network easy
         </div>
         <div class="flex flex-col space-y-6">
@@ -25,7 +25,7 @@
                   text-sm
                   max-w-257px
                   leading-24px
-                  font-light
+                  font-normal
                   text-bizz-faint-white
                 "
               >
@@ -47,7 +47,7 @@
                   text-sm
                   max-w-257px
                   leading-24px
-                  font-light
+                  font-normal
                   text-bizz-faint-white
                 "
               >
@@ -67,7 +67,7 @@
                   text-sm
                   max-w-257px
                   leading-24px
-                  font-light
+                  font-normal
                   text-bizz-faint-white
                 "
               >
