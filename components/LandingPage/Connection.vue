@@ -1,8 +1,8 @@
 <template>
-  <div class="pl-160 py-136 text-white">
-    <div class="flex">
-      <div class="w-5/12 pt-118 flex flex-col space-y-8">
-        <div class="text-white text-5xl leading-56px font-bold">
+  <div class="px-5 lg:pl-160 py-5 lg:py-136 text-white">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:w-5/12 pt-118 flex flex-col space-y-8">
+        <div class="text-white text-3xl lg:text-5xl leading-10 lg:leading-56px font-bold">
           All your connections, in your pocket
         </div>
         <div class="text-bizz-faint-white text-2xl">
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="w-7/12 pr-88px">
+      <div class="hidden lg:block w-full lg:w-7/12 lg:pr-88px">
         <div class="relative">
           <div class="absolute left_phone">
             <img src="@/assets/images/left_phone.png" alt="left_phone" />

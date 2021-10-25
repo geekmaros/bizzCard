@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-160">
+  <div class="lg:pt-160 pt-5">
     <div class="flex flex-col justify-center items-center">
       <div class="max-w-screen-md text-center flex flex-col justify-center items-center">
         <div>

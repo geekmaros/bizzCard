@@ -1,17 +1,17 @@
 <template>
   <div class="border-b border-bizz-faint-white">
-    <div class="px-160 py-136">
+    <div class="lg:px-160 px-5 lg:py-136 ">
       <div class="flex flex-col justify-center items-center mb-20">
         <div class="uppercase mb-2 font-bold text-sm text-bizz-faint-white">
           New Features added every week
         </div>
-        <div class="text-64px leading-65px font-bold">
+        <div class="text-3xl lg:text-64px lg:leading-65px leading-10 font-bold">
           <span class="text-white">BizzCard For</span>
           <span class="text-bizz-orange">Business</span>
         </div>
       </div>
-      <div class="grid grid-cols-3 divide-x divide-bizz-faint-white">
-        <div class="flex flex-col space-y-8 py-8 pr-20">
+      <div class="grid lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x  divide-bizz-faint-white">
+        <div class="flex flex-col space-y-8  py-4 lg:py-8 lg:pr-20">
           <div>
             <svg
               width="48"
@@ -42,7 +42,7 @@
             the best version of you. Less thinking!
           </div>
         </div>
-        <div class="flex flex-col px-20 py-8 space-y-8">
+        <div class="flex flex-col lg:px-20 py-8 space-y-8">
           <div>
             <svg-icon name="ball" class="w-12 h-12" />
           </div>
@@ -54,7 +54,7 @@
             the best version of you. Less thinking!
           </div>
         </div>
-        <div class="flex flex-col pl-20 py-8 space-y-8">
+        <div class="flex flex-col lg:pl-20 py-8 space-y-8">
           <div>
             <svg-icon name="clock" class="w-12 h-12" />
           </div>
